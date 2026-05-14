@@ -3,8 +3,8 @@ pipeline {
 
   environment {
     SONAR_HOME = tool "Sonar"
-    FRONTEND_IMAGE = "qazaidi123/travel2-front"
-    BACKEND_IMAGE = "qazaidi123/travel2-back"
+    FRONTEND_IMAGE = "qazaidi123/travel3-front"
+    BACKEND_IMAGE = "qazaidi123/travel3-back"
     IMAGE_TAG = "${BUILD_NUMBER}"
     DOCKER_CREDS = credentials('dockerhub-creds')
    
