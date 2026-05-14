@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExploreWorld</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">ExploreWorld</div>
+
+  <nav>
+    <a onclick="showHome()">Home</a>
+    <a onclick="showExplore()">Destinations</a>
+  </nav>
+
+  <div class="contact">
+    ☎ 1800-123-999
+    <button class="register-btn" onclick="openRegister()">Register</button>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Luxury Travel Redefined</h1>
+    <p>Curated journeys across the globe</p>
+    <button onclick="showExplore()">Explore Destinations</button>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="explore" class="hidden explore">
+
+  <div class="card" onclick="showGallery('India')">
+    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+    <div class="label">India<br><span>₹80,000 | 5D/6N</span></div>
+  </div>
+
+  <div class="card" onclick="showGallery('Bali')">
+    <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b">
+    <div class="label">Bali<br><span>₹70,000 | 4D/5N</span></div>
+  </div>
+
+  <div class="card" onclick="showGallery('Maldives')">
+    <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd">
+    <div class="label">Maldives<br><span>₹90,000 | 3D/4N</span></div>
+  </div>
+
+  <div class="card" onclick="showGallery('Dubai')">
+    <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+    <div class="label">Dubai<br><span>₹60,000 | 4D/5N</span></div>
+  </div>
+
+  <div class="card" onclick="showGallery('Switzerland')">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+    <div class="label">Switzerland<br><span>₹1,20,000 | 6D/7N</span></div>
+  </div>
+
+  <div class="card" onclick="showGallery('Thailand')">
+    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9">
+    <div class="label">Thailand<br><span>₹50,000 | 4D/5N</span></div>
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="hidden gallery"></section>
+
+<!-- PACKAGE -->
+<section id="package" class="hidden package"></section>
+
+<!-- BOOKING MODAL -->
+<div id="registerModal" class="modal hidden">
+  <div class="modal-box">
+    <h2>Register</h2>
+    <input id="name" placeholder="Name">
+    <input id="mobile" placeholder="Mobile Number">
+    <input id="destination" placeholder="Destination Choice">
+    <input id="members" placeholder="Number of Members">
+
+    <button onclick="submitForm()">Submit</button>
+
+    <p id="successMsg" style="color:green;margin-top:10px;"></p>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
