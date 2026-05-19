@@ -94,7 +94,7 @@ Developer pushes code to GitHub ---> PR generation (manually) ---> PR forwarded 
 - ![Grafana Pods](screenshots/Grafana_Pods_Dash.jpg)
 
 - EC2 Output
-  ![Kubectl output](screenshots/Nodes_Pods_Svc.jpg)
+  ![Kubectl output](screenshots/Nods_Pods_Svc.jpg)
   
 
 ---
