@@ -11,6 +11,12 @@ pipeline {
      
   }
   stages {
+
+    stage("git repo clone") {
+      steps {
+        git url: "https://github.com/Qazaidi123/dockerimage_optimize.git", branch: "main"
+      }
+    } 
                 
     stage("SonarQube Analysis") {
       steps {
